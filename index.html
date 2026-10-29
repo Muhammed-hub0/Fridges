@@ -285,10 +285,11 @@ body {
     <div class="mb-4">
       <div class="text-xs font-bold mb-2" style="color: var(--muted);">🔥 مقارنات سريعة شائعة:</div>
       <div class="flex flex-wrap gap-2" id="quickPresets">
-        <button type="button" class="preset-pill" data-a="toshiba-338" data-b="midea-330">توشيبا 338 لتر 🆚 ميديا 330 لتر (كومبي)</button>
-        <button type="button" class="preset-pill" data-a="toshiba-338" data-b="toshiba-411">توشيبا 338 لتر 🆚 توشيبا 411 لتر</button>
-        <button type="button" class="preset-pill" data-a="toshiba-463" data-b="midea-535">توشيبا 463 لتر 🆚 ميديا 535 لتر (سعات كبيرة)</button>
-        <button type="button" class="preset-pill" data-a="toshiba-411" data-b="toshiba-463">توشيبا 411 لتر 🆚 توشيبا 463 لتر</button>
+        <button type="button" class="preset-pill" data-a="toshiba-338" data-b="fresh-357">الفئة الاقتصادية: توشيبا 338 لتر 🆚 فريش 357 لتر</button>
+        <button type="button" class="preset-pill" data-a="midea-330" data-b="midea-310">فريزر سفلي (كومبي): ميديا 330 لتر 🆚 ميديا 310 لتر</button>
+        <button type="button" class="preset-pill" data-a="toshiba-411" data-b="sharp-384">توشيبا 411 لتر 🆚 شارب 384 لتر ديجيتال</button>
+        <button type="button" class="preset-pill" data-a="toshiba-463" data-b="midea-535">سعات عائلية كبيرة: توشيبا 463 لتر 🆚 ميديا 535 لتر</button>
+        <button type="button" class="preset-pill" data-a="beko-400" data-b="fresh-404">سعة 400 لتر: بيكو 400 لتر 🆚 فريش 404 لتر</button>
       </div>
     </div>
 
@@ -361,7 +362,7 @@ body {
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-4">
         <div>
           <label for="searchInput" class="block text-xs font-bold mb-1" style="color: var(--muted);">بحث بالاسم أو الماركة</label>
-          <input id="searchInput" type="text" placeholder="مثال: توشيبا، ميديا، 338، إنفرتر..." class="w-full px-3 py-2 rounded-xl text-sm surface-alt" style="color: var(--text);" />
+          <input id="searchInput" type="text" placeholder="مثال: توشيبا، ميديا، شارب، بيكو، فريش..." class="w-full px-3 py-2 rounded-xl text-sm surface-alt" style="color: var(--text);" />
         </div>
         <div>
           <label for="capFilter" class="block text-xs font-bold mb-1" style="color: var(--muted);">السعة اللترية</label>
@@ -377,8 +378,9 @@ body {
           <select id="priceFilter" class="w-full px-3 py-2 rounded-xl text-sm surface-alt font-semibold" style="color: var(--text);">
             <option value="99999">كل الأسعار</option>
             <option value="20000">حتى 20,000 جنيه</option>
-            <option value="26000">حتى 26,000 جنيه</option>
-            <option value="33000">حتى 33,000 جنيه</option>
+            <option value="25000">حتى 25,000 جنيه</option>
+            <option value="30000">حتى 30,000 جنيه</option>
+            <option value="36000">حتى 36,000 جنيه</option>
           </select>
         </div>
         <div>
@@ -443,17 +445,17 @@ body {
         <div class="surface-alt p-4 rounded-xl">
           <label for="qBudget" class="block text-sm font-extrabold mb-2">1. الميزانية التقريبية؟</label>
           <select id="qBudget" class="w-full p-2.5 rounded-lg text-sm font-semibold" style="background: var(--surface); color: var(--text); border: 1px solid var(--line);">
-            <option value="low" selected>اقتصادية (أقل من 24,000 ج.م)</option>
-            <option value="mid">متوسطة (24,000 إلى 30,000 ج.م)</option>
-            <option value="high">سعات وفئات عليا (أكثر من 30,000 ج.م)</option>
+            <option value="low">اقتصادية (أقل من 20,000 ج.م)</option>
+            <option value="mid" selected>متوسطة (20,000 إلى 26,000 ج.م)</option>
+            <option value="high">سعات وفئات عليا (أكثر من 26,000 ج.م)</option>
           </select>
         </div>
 
         <div class="surface-alt p-4 rounded-xl">
           <label for="qSize" class="block text-sm font-extrabold mb-2">2. السعة وتصميم الفريزر؟</label>
           <select id="qSize" class="w-full p-2.5 rounded-lg text-sm font-semibold" style="background: var(--surface); color: var(--text); border: 1px solid var(--line);">
-            <option value="med" selected>سعة متوسطة (حوالي 330 - 350 لتر)</option>
-            <option value="large">سعة عائلية كبيرة (أكثر من 400 لتر)</option>
+            <option value="med" selected>سعة متوسطة (حوالي 330 - 360 لتر)</option>
+            <option value="large">سعة عائلية كبيرة (400 لتر فأكثر)</option>
             <option value="bottom">فريزر سفلي (كومبي لسهولة الاستخدام)</option>
           </select>
         </div>
@@ -503,7 +505,7 @@ const P = [
     id: "toshiba-338",
     brand: "TOSHIBA",
     ar: "توشيبا",
-    short: "توشيبا 338 لتر إنفرتر",
+    short: "توشيبا 338 لتر إنفرتر رمادي",
     name: "TOSHIBA GR-RT468WE-PMN(49)-PRO – 338 لتر",
     price: 19148,
     cap: 338,
@@ -514,6 +516,22 @@ const P = [
     warranty_years: 10,
     brand_score: 9,
     link: "https://link.amazon/B0f5r0JFY"
+  },
+  {
+    id: "toshiba-338-silver",
+    brand: "TOSHIBA",
+    ar: "توشيبا",
+    short: "توشيبا 338 لتر إنفرتر سيلفر",
+    name: "Toshiba GR-RT468WE-PMN(57) – 338 لتر",
+    price: 19149,
+    cap: 338,
+    freezer: "علوي",
+    motor: "إنفرتر",
+    doors: 2,
+    warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
+    warranty_years: 10,
+    brand_score: 9,
+    link: "https://link.amazon/B0bxAxU6j"
   },
   {
     id: "toshiba-411",
@@ -548,20 +566,20 @@ const P = [
     link: "https://link.amazon/B0ighduen"
   },
   {
-    id: "midea-535",
+    id: "midea-310",
     brand: "Midea",
     ar: "ميديا",
-    short: "ميديا 535 لتر إنفرتر",
-    name: "Midea Refrigerator MDRT723MTN46D – 535 لتر",
-    price: 31932,
-    cap: 535,
-    freezer: "علوي",
-    motor: "إنفرتر",
+    short: "ميديا 310 لتر فريزر سفلي (كومبي)",
+    name: "Midea Refrigerator MDRB424FGN46 – 310 لتر",
+    price: 20899,
+    cap: 310,
+    freezer: "سفلي (كومبي)",
+    motor: "عادي",
     doors: 2,
     warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
     warranty_years: 10,
     brand_score: 8.5,
-    link: "https://link.amazon/B03kcGYE7"
+    link: "https://link.amazon/B0d7ncaud"
   },
   {
     id: "midea-330",
@@ -578,6 +596,102 @@ const P = [
     warranty_years: 10,
     brand_score: 8.5,
     link: "https://link.amazon/B04tS3nCA"
+  },
+  {
+    id: "midea-449",
+    brand: "Midea",
+    ar: "ميديا",
+    short: "ميديا 449 لتر إنفرتر",
+    name: "Midea Refrigerator MDRT645MTE06E – 449 لتر",
+    price: 25900,
+    cap: 449,
+    freezer: "علوي",
+    motor: "إنفرتر",
+    doors: 2,
+    warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
+    warranty_years: 10,
+    brand_score: 8.5,
+    link: "https://link.amazon/B0ji8U1tU"
+  },
+  {
+    id: "midea-535",
+    brand: "Midea",
+    ar: "ميديا",
+    short: "ميديا 535 لتر إنفرتر",
+    name: "Midea Refrigerator MDRT723MTN46D – 535 لتر",
+    price: 31932,
+    cap: 535,
+    freezer: "علوي",
+    motor: "إنفرتر",
+    doors: 2,
+    warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
+    warranty_years: 10,
+    brand_score: 8.5,
+    link: "https://link.amazon/B03kcGYE7"
+  },
+  {
+    id: "sharp-384",
+    brand: "Sharp",
+    ar: "شارب",
+    short: "شارب 384 لتر ديجيتال أسود",
+    name: "Sharp SJ-PC48A(BK) – 384 لتر",
+    price: 35500,
+    cap: 384,
+    freezer: "علوي",
+    motor: "عادي",
+    doors: 2,
+    warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
+    warranty_years: 10,
+    brand_score: 7.5,
+    link: "https://link.amazon/B0i8DHFMv"
+  },
+  {
+    id: "beko-400",
+    brand: "Beko",
+    ar: "بيكو",
+    short: "بيكو 400 لتر ديفروست",
+    name: "Beko RDSG420M20SXBEG – 400 لتر",
+    price: 16899,
+    cap: 400,
+    freezer: "علوي",
+    motor: "عادي",
+    doors: 2,
+    warranty: "15 يوم إرجاع من أمازون<br>ضمان 5 سنوات من الوكيل",
+    warranty_years: 5,
+    brand_score: 7.5,
+    link: "https://link.amazon/B03bcfrkC"
+  },
+  {
+    id: "fresh-357",
+    brand: "Fresh",
+    ar: "فريش",
+    short: "فريش 357 لتر ديفروست",
+    name: "Fresh FDD-BS400BS – 357 لتر",
+    price: 17800,
+    cap: 357,
+    freezer: "علوي",
+    motor: "عادي",
+    doors: 2,
+    warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
+    warranty_years: 10,
+    brand_score: 6,
+    link: "https://link.amazon/B01iS2JEZ"
+  },
+  {
+    id: "fresh-404",
+    brand: "Fresh",
+    ar: "فريش",
+    short: "فريش 404 لتر ديجيتال",
+    name: "Fresh FNT-M400YT / M540YT – 404 لتر",
+    price: 23836,
+    cap: 404,
+    freezer: "علوي",
+    motor: "عادي",
+    doors: 2,
+    warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
+    warranty_years: 10,
+    brand_score: 6,
+    link: "https://link.amazon/B00xPa3iP"
   }
 ];
 
@@ -734,9 +848,9 @@ function renderComparison() {
   // Visual Bars
   const metrics = [
     { key: "brand_score", max: 10, title: "جودة البراند (من 10)", unit: " / 10" },
-    { key: "cap", max: 600, title: "السعة اللترية (لتر)", unit: " لتر" },
+    { key: "cap", max: 550, title: "السعة اللترية (لتر)", unit: " لتر" },
     { key: "warranty_years", max: 10, title: "ضمان الوكيل (سنوات)", unit: " سنوات" },
-    { key: "price", max: 35000, title: "السعر (جنيه مصري)", unit: " ج.م" }
+    { key: "price", max: 36000, title: "السعر (جنيه مصري)", unit: " ج.م" }
   ];
 
   $("bars").innerHTML = metrics.map(m => {
@@ -830,7 +944,7 @@ function renderCatalog() {
   });
 
   if (filtered.length === P.length) {
-    $("catalogCount").textContent = "عرض جميع الموديلات المعتمدة في السوق المصري (" + P.length + " ثلاجات)";
+    $("catalogCount").textContent = "عرض جميع الموديلات المعتمدة في السوق المصري (" + P.length + " ثلاجة)";
   } else {
     $("catalogCount").textContent = "الموديلات المطابقة للفلترة الحالية: " + filtered.length;
   }
@@ -921,15 +1035,15 @@ function renderFinder() {
     const reasons = [];
 
     // Budget match
-    if (budget === "low" && p.price <= 24000) {
+    if (budget === "low" && p.price <= 20000) {
       score += 30;
-      reasons.push("سعر اقتصادي مناسب للميزانية (" + n(p.price) + " ج.م)");
-    } else if (budget === "mid" && p.price > 24000 && p.price <= 30000) {
+      reasons.push("سعر اقتصادي ممتاز للميزانية (" + n(p.price) + " ج.م)");
+    } else if (budget === "mid" && p.price > 20000 && p.price <= 26000) {
       score += 25;
       reasons.push("سعر متوازن ضمن الفئة المتوسطة (" + n(p.price) + " ج.م)");
-    } else if (budget === "high" && p.price > 30000) {
+    } else if (budget === "high" && p.price > 26000) {
       score += 25;
-      reasons.push("فئة عليا وسعة تخزين ممتازة (" + n(p.price) + " ج.م)");
+      reasons.push("فئة عليا بمواصفات متطورة وسعة كبيرة (" + n(p.price) + " ج.م)");
     }
 
     // Size & Design match
@@ -938,16 +1052,16 @@ function renderFinder() {
       reasons.push("تصميم كومبي بفريزر سفلي لراحة الظهر وسهولة استخدام الثلاجة يومياً");
     } else if (size === "large" && p.cap >= 400) {
       score += 30;
-      reasons.push("سعة عائلية رحبة جدًا تناسب العائلات الكبيرة (" + p.cap + " لتر)");
+      reasons.push("سعة عائلية رحبة جدًا تبلغ " + p.cap + " لتر");
     } else if (size === "med" && p.cap < 400) {
       score += 25;
-      reasons.push("سعة عملية مناسبة للمطابخ المتوسطة (" + p.cap + " لتر)");
+      reasons.push("سعة عملية مناسبة للاستخدام اليومي (" + p.cap + " لتر)");
     }
 
     // Priority match
     if (priority === "inverter" && p.motor === "إنفرتر") {
       score += 30;
-      reasons.push("موتور إنفرتر ذكي موفر للطاقة ويعمل بصوت هادئ");
+      reasons.push("موتور إنفرتر ذكي موفر للطاقة وهادئ التشغيل");
     } else if (priority === "capacity") {
       score += Math.round(p.cap / 15);
       reasons.push("سعة تخزينية ممتازة تبلغ " + p.cap + " لتر");
@@ -1200,6 +1314,7 @@ function initApp() {
   const resetEl = byId("resetFiltersBtn");
   if (resetEl) resetEl.addEventListener("click", () => ev("filter_reset"));
 
+  // المساعد الذكي
   ["qBudget", "qSize", "qPriority"].forEach(id => {
     const el = byId(id);
     if (!el) return;
