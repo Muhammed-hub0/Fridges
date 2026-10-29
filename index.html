@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>دليل الثلاجات في مصر | مشترياتك صح</title>
-<meta name="description" content="قارن بين أشهر الثلاجات في مصر: السعة اللترية، مكان الفريزر، نوع الموتور، الضمان والسعر من أمازون مصر.">
+<meta name="description" content="قارن بين أشهر الثلاجات في مصر: السعة اللترية، مكان الفريزر، نوع الموتور، نظام التبريد نوفروست أو ديفروست، الضمان والسعر من أمازون مصر.">
 <meta name="theme-color" content="#0f253d">
 <meta property="og:type" content="website">
 <meta property="og:title" content="دليل الثلاجات في مصر | مشترياتك صح">
@@ -217,7 +217,7 @@ body {
       </div>
       <div>
         <div class="font-extrabold text-base sm:text-lg leading-tight">مشترياتك صح · دليل الثلاجات في مصر</div>
-        <div class="text-xs" style="color: var(--muted);">مقارنة شاملة لأفضل الموديلات المتوفرة في السوق المصري على أمازون مصر (أكتوبر 2026)</div>
+        <div class="text-xs" style="color: var(--muted);">مقارنة شاملة لأفضل 21 موديل متوفر في السوق المصري على أمازون مصر (أكتوبر 2026)</div>
       </div>
     </div>
 
@@ -240,7 +240,7 @@ body {
         <span class="win-badge mb-3">تحديث بيانات أمازون مصر • أكتوبر 2026</span>
         <h1 class="text-2xl sm:text-3xl font-extrabold mb-2 leading-snug">قارن بين أشهر الثلاجات واختار الأنسب لمطبخك</h1>
         <p class="text-sm sm:text-base mb-4" style="color: var(--muted);">
-          دليلك التفاعلي للمقارنة بين أفضل الثلاجات المتوفرة في السوق المصري من حيث السعة اللترية، مكان الفريزر، نوع الموتور، الضمان، والسعر الحالي.
+          دليلك التفاعلي للمقارنة بين أفضل 21 ثلاجة متوفرة في السوق المصري من حيث السعة اللترية، مكان الفريزر، نوع الموتور، نظام التبريد (نوفروست/ديفروست)، الضمان، والسعر الحالي.
         </p>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 text-center">
           <div class="surface-alt rounded-xl p-2.5">
@@ -285,10 +285,11 @@ body {
     <div class="mb-4">
       <div class="text-xs font-bold mb-2" style="color: var(--muted);">🔥 مقارنات سريعة شائعة:</div>
       <div class="flex flex-wrap gap-2" id="quickPresets">
-        <button type="button" class="preset-pill" data-a="toshiba-338" data-b="fresh-357">الفئة الاقتصادية: توشيبا 338 لتر 🆚 فريش 357 لتر</button>
-        <button type="button" class="preset-pill" data-a="midea-330" data-b="midea-310">فريزر سفلي (كومبي): ميديا 330 لتر 🆚 ميديا 310 لتر</button>
+        <button type="button" class="preset-pill" data-a="toshiba-338" data-b="midea-338">توشيبا 338 لتر إنفرتر 🆚 ميديا 338 لتر</button>
+        <button type="button" class="preset-pill" data-a="midea-330" data-b="bosch-330">فريزر سفلي (كومبي): ميديا 330 لتر 🆚 بوش 330 لتر</button>
         <button type="button" class="preset-pill" data-a="toshiba-411" data-b="sharp-384">توشيبا 411 لتر 🆚 شارب 384 لتر ديجيتال</button>
-        <button type="button" class="preset-pill" data-a="toshiba-463" data-b="midea-535">سعات عائلية كبيرة: توشيبا 463 لتر 🆚 ميديا 535 لتر</button>
+        <button type="button" class="preset-pill" data-a="toshiba-450" data-b="midea-449">سعة 450 لتر إنفرتر: توشيبا 450 لتر 🆚 ميديا 449 لتر</button>
+        <button type="button" class="preset-pill" data-a="sharp-480" data-b="midea-535">السعات الكبيرة: شارب 480 لتر 🆚 ميديا 535 لتر</button>
         <button type="button" class="preset-pill" data-a="beko-400" data-b="fresh-404">سعة 400 لتر: بيكو 400 لتر 🆚 فريش 404 لتر</button>
       </div>
     </div>
@@ -362,14 +363,14 @@ body {
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-4">
         <div>
           <label for="searchInput" class="block text-xs font-bold mb-1" style="color: var(--muted);">بحث بالاسم أو الماركة</label>
-          <input id="searchInput" type="text" placeholder="مثال: توشيبا، ميديا، شارب، بيكو، فريش..." class="w-full px-3 py-2 rounded-xl text-sm surface-alt" style="color: var(--text);" />
+          <input id="searchInput" type="text" placeholder="مثال: توشيبا، ميديا، بوش، شارب، بيكو، فريش..." class="w-full px-3 py-2 rounded-xl text-sm surface-alt" style="color: var(--text);" />
         </div>
         <div>
           <label for="capFilter" class="block text-xs font-bold mb-1" style="color: var(--muted);">السعة اللترية</label>
           <select id="capFilter" class="w-full px-3 py-2 rounded-xl text-sm surface-alt font-semibold" style="color: var(--text);">
             <option value="all">كل السعات المتوفرة</option>
             <option value="350">حتى 350 لتر</option>
-            <option value="450">حتى 450 لتر</option>
+            <option value="450">من 351 إلى 450 لتر</option>
             <option value="451">أكبر من 450 لتر</option>
           </select>
         </div>
@@ -379,8 +380,8 @@ body {
             <option value="99999">كل الأسعار</option>
             <option value="20000">حتى 20,000 جنيه</option>
             <option value="25000">حتى 25,000 جنيه</option>
-            <option value="30000">حتى 30,000 جنيه</option>
-            <option value="36000">حتى 36,000 جنيه</option>
+            <option value="32000">حتى 32,000 جنيه</option>
+            <option value="50000">حتى 50,000 جنيه</option>
           </select>
         </div>
         <div>
@@ -397,6 +398,10 @@ body {
       <!-- Secondary filter options -->
       <div class="flex flex-wrap items-center justify-between gap-3 pt-3" style="border-top: 1px solid var(--line);">
         <div class="flex flex-wrap items-center gap-4 text-xs sm:text-sm font-semibold">
+          <label class="inline-flex items-center gap-1.5 cursor-pointer">
+            <input type="checkbox" id="chkNoFrost" class="rounded" />
+            <span>نوفروست فقط</span>
+          </label>
           <label class="inline-flex items-center gap-1.5 cursor-pointer">
             <input type="checkbox" id="chkInverter" class="rounded" />
             <span>موتور إنفرتر فقط</span>
@@ -425,8 +430,8 @@ body {
     <div class="surface-card p-4 sm:p-6 mb-6">
       <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
         <div>
-          <h2 class="text-lg font-extrabold m-0">📊 الجدول الشامل للثلاجات في السوق المصري</h2>
-          <p class="text-xs m-0" style="color: var(--muted);">اضغط على أي جهاز لاختياره في المقارنة الثنائية أو شرائه من أمازون مصر</p>
+          <h2 class="text-lg font-extrabold m-0">📊 الجدول الشامل للثلاجات في السوق المصري (21 موديل)</h2>
+          <p class="text-xs m-0" style="color: var(--muted);">اضغط على أي جهاز للانتقال إلى صفحته على أمازون مصر</p>
         </div>
       </div>
       <div class="overflow-x-auto">
@@ -439,7 +444,7 @@ body {
   <section id="finderView" class="tab-panel" style="display: none;">
     <div class="surface-card p-5 sm:p-6 mb-6">
       <h2 class="text-xl font-extrabold mb-1">🧭 مساعد الاختيار الذكي</h2>
-      <p class="text-sm mb-5" style="color: var(--muted);">جاوب على 3 أسئلة سريعة وهنرشحلك أنسب ثلاجة لاحتياجك من أفضل الموديلات المتوفرة في السوق المصري.</p>
+      <p class="text-sm mb-5" style="color: var(--muted);">جاوب على 3 أسئلة سريعة وهنرشحلك أنسب ثلاجة لاحتياجك من أفضل 21 موديل متوفر في السوق المصري.</p>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
         <div class="surface-alt p-4 rounded-xl">
@@ -454,7 +459,7 @@ body {
         <div class="surface-alt p-4 rounded-xl">
           <label for="qSize" class="block text-sm font-extrabold mb-2">2. السعة وتصميم الفريزر؟</label>
           <select id="qSize" class="w-full p-2.5 rounded-lg text-sm font-semibold" style="background: var(--surface); color: var(--text); border: 1px solid var(--line);">
-            <option value="med" selected>سعة متوسطة (حوالي 330 - 360 لتر)</option>
+            <option value="med" selected>سعة متوسطة (حوالي 310 - 385 لتر)</option>
             <option value="large">سعة عائلية كبيرة (400 لتر فأكثر)</option>
             <option value="bottom">فريزر سفلي (كومبي لسهولة الاستخدام)</option>
           </select>
@@ -463,7 +468,7 @@ body {
         <div class="surface-alt p-4 rounded-xl">
           <label for="qPriority" class="block text-sm font-extrabold mb-2">3. ما الأهم بالنسبة لك؟</label>
           <select id="qPriority" class="w-full p-2.5 rounded-lg text-sm font-semibold" style="background: var(--surface); color: var(--text); border: 1px solid var(--line);">
-            <option value="inverter" selected>موتور إنفرتر لتوفير استهلاك الكهرباء</option>
+            <option value="inverter" selected>موتور إنفرتر ونوفروست لتوفير الكهرباء</option>
             <option value="capacity">أقصى سعة تخزينية ممكنة</option>
             <option value="brand">أعلى تقييم براند وموثوقية</option>
           </select>
@@ -505,33 +510,18 @@ const P = [
     id: "toshiba-338",
     brand: "TOSHIBA",
     ar: "توشيبا",
-    short: "توشيبا 338 لتر إنفرتر رمادي",
+    short: "توشيبا 338 لتر إنفرتر",
     name: "TOSHIBA GR-RT468WE-PMN(49)-PRO – 338 لتر",
     price: 19148,
     cap: 338,
     freezer: "علوي",
     motor: "إنفرتر",
+    cooling: "نوفروست",
     doors: 2,
     warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
     warranty_years: 10,
     brand_score: 9,
     link: "https://link.amazon/B0f5r0JFY"
-  },
-  {
-    id: "toshiba-338-silver",
-    brand: "TOSHIBA",
-    ar: "توشيبا",
-    short: "توشيبا 338 لتر إنفرتر سيلفر",
-    name: "Toshiba GR-RT468WE-PMN(57) – 338 لتر",
-    price: 19149,
-    cap: 338,
-    freezer: "علوي",
-    motor: "إنفرتر",
-    doors: 2,
-    warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
-    warranty_years: 10,
-    brand_score: 9,
-    link: "https://link.amazon/B0bxAxU6j"
   },
   {
     id: "toshiba-411",
@@ -543,11 +533,29 @@ const P = [
     cap: 411,
     freezer: "علوي",
     motor: "إنفرتر",
+    cooling: "نوفروست",
     doors: 2,
     warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
     warranty_years: 10,
     brand_score: 9,
     link: "https://link.amazon/B0doII1tw"
+  },
+  {
+    id: "toshiba-450",
+    brand: "TOSHIBA",
+    ar: "توشيبا",
+    short: "توشيبا 450 لتر إنفرتر باب زجاج",
+    name: "Toshiba GR-RT624WE-PGN(73) – 450 لتر",
+    price: 31899,
+    cap: 450,
+    freezer: "علوي",
+    motor: "إنفرتر",
+    cooling: "نوفروست",
+    doors: 2,
+    warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
+    warranty_years: 10,
+    brand_score: 9,
+    link: "https://link.amazon/B0fR228ao"
   },
   {
     id: "toshiba-463",
@@ -559,6 +567,7 @@ const P = [
     cap: 463,
     freezer: "علوي",
     motor: "إنفرتر",
+    cooling: "نوفروست",
     doors: 2,
     warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
     warranty_years: 10,
@@ -575,6 +584,7 @@ const P = [
     cap: 310,
     freezer: "سفلي (كومبي)",
     motor: "عادي",
+    cooling: "نوفروست",
     doors: 2,
     warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
     warranty_years: 10,
@@ -591,11 +601,29 @@ const P = [
     cap: 330,
     freezer: "سفلي (كومبي)",
     motor: "عادي",
+    cooling: "نوفروست",
     doors: 2,
     warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
     warranty_years: 10,
     brand_score: 8.5,
     link: "https://link.amazon/B04tS3nCA"
+  },
+  {
+    id: "midea-338",
+    brand: "Midea",
+    ar: "ميديا",
+    short: "ميديا 338 لتر نوفروست",
+    name: "Midea Refrigerator MDRT489MTN45 – 338 لتر",
+    price: 18999,
+    cap: 338,
+    freezer: "علوي",
+    motor: "عادي",
+    cooling: "نوفروست",
+    doors: 2,
+    warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
+    warranty_years: 10,
+    brand_score: 8.5,
+    link: "https://link.amazon/B04z4C4lF"
   },
   {
     id: "midea-449",
@@ -607,6 +635,7 @@ const P = [
     cap: 449,
     freezer: "علوي",
     motor: "إنفرتر",
+    cooling: "نوفروست",
     doors: 2,
     warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
     warranty_years: 10,
@@ -623,6 +652,7 @@ const P = [
     cap: 535,
     freezer: "علوي",
     motor: "إنفرتر",
+    cooling: "نوفروست",
     doors: 2,
     warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
     warranty_years: 10,
@@ -630,20 +660,89 @@ const P = [
     link: "https://link.amazon/B03kcGYE7"
   },
   {
+    id: "bosch-330",
+    brand: "Bosch",
+    ar: "بوش",
+    short: "بوش 330 لتر فريزر سفلي (كومبي)",
+    name: "Bosch Serie 4 KGN39LEE8 – 330 لتر",
+    price: 24999,
+    cap: 330,
+    freezer: "سفلي (كومبي)",
+    motor: "عادي",
+    cooling: "نوفروست",
+    doors: 2,
+    warranty: "15 يوم إرجاع من أمازون<br>ضمان 5 سنوات من الوكيل",
+    warranty_years: 5,
+    brand_score: 7.5,
+    link: "https://link.amazon/B09Iewv3P"
+  },
+  {
+    id: "bosch-485",
+    brand: "Bosch",
+    ar: "بوش",
+    short: "بوش 485 لتر نوفروست",
+    name: "Bosch Serie 4 KDN55NL2E8 – 485 لتر",
+    price: 30400,
+    cap: 485,
+    freezer: "علوي",
+    motor: "عادي",
+    cooling: "نوفروست",
+    doors: 2,
+    warranty: "15 يوم إرجاع من أمازون<br>ضمان 5 سنوات من الوكيل",
+    warranty_years: 5,
+    brand_score: 7.5,
+    link: "https://link.amazon/B0c6vdNo7"
+  },
+  {
     id: "sharp-384",
     brand: "Sharp",
     ar: "شارب",
-    short: "شارب 384 لتر ديجيتال أسود",
+    short: "شارب 384 لتر ديجيتال",
     name: "Sharp SJ-PC48A(BK) – 384 لتر",
     price: 35500,
     cap: 384,
     freezer: "علوي",
     motor: "عادي",
+    cooling: "نوفروست",
     doors: 2,
     warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
     warranty_years: 10,
     brand_score: 7.5,
     link: "https://link.amazon/B0i8DHFMv"
+  },
+  {
+    id: "sharp-480",
+    brand: "Sharp",
+    ar: "شارب",
+    short: "شارب 480 لتر إنفرتر باب زجاج",
+    name: "SHARP SJ-GV63G-RD – 480 لتر",
+    price: 49379,
+    cap: 480,
+    freezer: "علوي",
+    motor: "إنفرتر",
+    cooling: "نوفروست",
+    doors: 2,
+    warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
+    warranty_years: 10,
+    brand_score: 7.5,
+    link: "https://link.amazon/B01tw472T"
+  },
+  {
+    id: "beko-314",
+    brand: "Beko",
+    ar: "بيكو",
+    short: "بيكو 314 لتر نوفروست",
+    name: "Beko RDNE340K22B – 314 لتر",
+    price: 25555,
+    cap: 314,
+    freezer: "علوي",
+    motor: "عادي",
+    cooling: "نوفروست",
+    doors: 2,
+    warranty: "15 يوم إرجاع من أمازون<br>ضمان 5 سنوات من الوكيل",
+    warranty_years: 5,
+    brand_score: 7.5,
+    link: "https://link.amazon/B0iRcMjkD"
   },
   {
     id: "beko-400",
@@ -655,11 +754,29 @@ const P = [
     cap: 400,
     freezer: "علوي",
     motor: "عادي",
+    cooling: "ديفروست",
     doors: 2,
     warranty: "15 يوم إرجاع من أمازون<br>ضمان 5 سنوات من الوكيل",
     warranty_years: 5,
     brand_score: 7.5,
     link: "https://link.amazon/B03bcfrkC"
+  },
+  {
+    id: "beko-440",
+    brand: "Beko",
+    ar: "بيكو",
+    short: "بيكو 440 لتر ديفروست",
+    name: "Beko RDSG550M20SEG – 440 لتر",
+    price: 17790,
+    cap: 440,
+    freezer: "علوي",
+    motor: "عادي",
+    cooling: "ديفروست",
+    doors: 2,
+    warranty: "15 يوم إرجاع من أمازون<br>ضمان 5 سنوات من الوكيل",
+    warranty_years: 5,
+    brand_score: 7.5,
+    link: "https://link.amazon/B02l4AtXn"
   },
   {
     id: "fresh-357",
@@ -671,11 +788,46 @@ const P = [
     cap: 357,
     freezer: "علوي",
     motor: "عادي",
+    cooling: "ديفروست",
     doors: 2,
     warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
     warranty_years: 10,
     brand_score: 6,
     link: "https://link.amazon/B01iS2JEZ"
+  },
+  {
+    id: "fresh-369",
+    brand: "Fresh",
+    ar: "فريش",
+    short: "فريش 369 لتر نوفروست",
+    name: "Fresh FNT-B400BBC – 369 لتر",
+    price: 20999,
+    cap: 369,
+    freezer: "علوي",
+    motor: "عادي",
+    cooling: "نوفروست",
+    doors: 2,
+    warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
+    warranty_years: 10,
+    brand_score: 6,
+    link: "https://link.amazon/B0hYYPn80"
+  },
+  {
+    id: "fresh-397",
+    brand: "Fresh",
+    ar: "فريش",
+    short: "فريش 397 لتر نوفروست",
+    name: "Fresh FNT-B470BBC – 397 لتر",
+    price: 23850,
+    cap: 397,
+    freezer: "علوي",
+    motor: "عادي",
+    cooling: "نوفروست",
+    doors: 2,
+    warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
+    warranty_years: 10,
+    brand_score: 6,
+    link: "https://link.amazon/B09Knqz1Z"
   },
   {
     id: "fresh-404",
@@ -687,11 +839,29 @@ const P = [
     cap: 404,
     freezer: "علوي",
     motor: "عادي",
+    cooling: "نوفروست",
     doors: 2,
     warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
     warranty_years: 10,
     brand_score: 6,
     link: "https://link.amazon/B00xPa3iP"
+  },
+  {
+    id: "unionaire-420",
+    brand: "Unionaire",
+    ar: "يونيون إير",
+    short: "يونيون إير 420 لتر فريزر سفلي (كومبي)",
+    name: "Unionaire URN-600CEPBLG1A-DTHR – 420 لتر",
+    price: 22000,
+    cap: 420,
+    freezer: "سفلي (كومبي)",
+    motor: "عادي",
+    cooling: "نوفروست",
+    doors: 2,
+    warranty: "15 يوم إرجاع من أمازون<br>ضمان 10 سنوات من الوكيل",
+    warranty_years: 10,
+    brand_score: 6,
+    link: "https://link.amazon/B0asvg7QE"
   }
 ];
 
@@ -701,6 +871,7 @@ const R = [
   { k: "cap", l: "السعة اللترية", f: v => v + " لتر", best: "max" },
   { k: "freezer", l: "مكان الفريزر", f: v => v },
   { k: "motor", l: "نوع الموتور", f: v => v, best: "max", sc: v => v === "إنفرتر" ? 1 : 0 },
+  { k: "cooling", l: "نظام التبريد (إذابة الثلج)", f: v => v, best: "max", sc: v => v === "نوفروست" ? 1 : 0 },
   { k: "doors", l: "عدد الأبواب", f: v => v + " باب" },
   { k: "warranty", l: "الضمان والإرجاع", f: v => v, best: "max", sc: (v, p) => p ? p.warranty_years : 0 },
   { k: "brand_score", l: "جودة البراند (رأينا الشخصي)", f: v => v + " من 10", best: "max" },
@@ -710,6 +881,7 @@ const R = [
 const W = {
   cap: v => "سعة تخزينية أكبر (" + v + " لتر)",
   motor: (v, p) => (p && p.motor === "إنفرتر") ? "موتور إنفرتر موفر للكهرباء وهادئ" : null,
+  cooling: (v, p) => (p && p.cooling === "نوفروست") ? "نظام تبريد نوفروست يمنع تكوين الثلج تلقائيًا" : null,
   brand_score: v => "جودة براند وتقييم أعلى (" + v + " من 10)",
   warranty: (v, p) => (p && p.warranty_years) ? "مدة ضمان أطول (" + p.warranty_years + " سنوات)" : null
 };
@@ -760,6 +932,7 @@ function renderEmptySlot(slotClass, label) {
 function renderCard(p, slotClass, badgeLabel) {
   const tags = [];
   tags.push(p.cap + " لتر");
+  tags.push(p.cooling);
   tags.push("فريزر " + p.freezer);
   tags.push("موتور " + p.motor);
   tags.push(p.doors + " باب");
@@ -850,7 +1023,7 @@ function renderComparison() {
     { key: "brand_score", max: 10, title: "جودة البراند (من 10)", unit: " / 10" },
     { key: "cap", max: 550, title: "السعة اللترية (لتر)", unit: " لتر" },
     { key: "warranty_years", max: 10, title: "ضمان الوكيل (سنوات)", unit: " سنوات" },
-    { key: "price", max: 36000, title: "السعر (جنيه مصري)", unit: " ج.م" }
+    { key: "price", max: 50000, title: "السعر (جنيه مصري)", unit: " ج.م" }
   ];
 
   $("bars").innerHTML = metrics.map(m => {
@@ -918,6 +1091,7 @@ function renderCatalog() {
   const capFilterVal = $("capFilter").value;
   const maxPrice = parseFloat($("priceFilter").value);
   const sortBy = $("sortSelect").value;
+  const reqNoFrost = $("chkNoFrost").checked;
   const reqInverter = $("chkInverter").checked;
   const reqBottom = $("chkBottomFreezer").checked;
   const reqTop = $("chkTopFreezer").checked;
@@ -930,6 +1104,7 @@ function renderCatalog() {
     if (capFilterVal === "450" && (p.cap <= 350 || p.cap > 450)) return false;
     if (capFilterVal === "451" && p.cap <= 450) return false;
     if (p.price > maxPrice) return false;
+    if (reqNoFrost && p.cooling !== "نوفروست") return false;
     if (reqInverter && p.motor !== "إنفرتر") return false;
     if (reqBottom && !p.freezer.includes("سفلي")) return false;
     if (reqTop && !p.freezer.includes("علوي")) return false;
@@ -971,6 +1146,7 @@ function renderCatalog() {
           '<div class="text-2xl font-extrabold mb-3">' + n(p.price) + ' <small class="text-xs font-normal" style="color: var(--muted);">جنيه</small></div>' +
           '<div class="space-y-1.5 text-xs mb-4" style="color: var(--muted);">' +
             '<div class="flex justify-between"><span>السعة:</span><strong style="color: var(--text);">' + p.cap + ' لتر</strong></div>' +
+            '<div class="flex justify-between"><span>نظام التبريد:</span><strong style="color: var(--text);">' + p.cooling + '</strong></div>' +
             '<div class="flex justify-between"><span>مكان الفريزر:</span><strong style="color: var(--text);">' + p.freezer + '</strong></div>' +
             '<div class="flex justify-between"><span>نوع الموتور:</span><strong style="color: var(--text);">' + p.motor + '</strong></div>' +
             '<div class="flex justify-between"><span>عدد الأبواب:</span><strong style="color: var(--text);">' + p.doors + ' باب</strong></div>' +
@@ -995,6 +1171,7 @@ function renderFullMatrix() {
     '<th class="p-3 text-right">الثلاجة</th>' +
     '<th class="p-3 text-center">السعر</th>' +
     '<th class="p-3 text-center">السعة</th>' +
+    '<th class="p-3 text-center">التبريد</th>' +
     '<th class="p-3 text-center">مكان الفريزر</th>' +
     '<th class="p-3 text-center">نوع الموتور</th>' +
     '<th class="p-3 text-center">الأبواب</th>' +
@@ -1009,6 +1186,7 @@ function renderFullMatrix() {
         '<td class="p-3 font-extrabold text-right">' + p.short + '<div class="text-xs font-normal" style="color: var(--muted);">' + p.brand + '</div></td>' +
         '<td class="p-3 text-center font-bold">' + n(p.price) + ' ج.م</td>' +
         '<td class="p-3 text-center font-bold">' + p.cap + ' لتر</td>' +
+        '<td class="p-3 text-center font-semibold ' + (p.cooling === "نوفروست" ? "win-cell" : "") + '">' + p.cooling + '</td>' +
         '<td class="p-3 text-center">' + p.freezer + '</td>' +
         '<td class="p-3 text-center font-semibold ' + (p.motor === "إنفرتر" ? "win-cell" : "") + '">' + p.motor + '</td>' +
         '<td class="p-3 text-center">' + p.doors + '</td>' +
@@ -1059,9 +1237,15 @@ function renderFinder() {
     }
 
     // Priority match
-    if (priority === "inverter" && p.motor === "إنفرتر") {
-      score += 30;
-      reasons.push("موتور إنفرتر ذكي موفر للطاقة وهادئ التشغيل");
+    if (priority === "inverter") {
+      if (p.motor === "إنفرتر") {
+        score += 25;
+        reasons.push("موتور إنفرتر ذكي موفر للطاقة وهادئ التشغيل");
+      }
+      if (p.cooling === "نوفروست") {
+        score += 10;
+        reasons.push("تبريد نوفروست يمنع تكوين الثلج");
+      }
     } else if (priority === "capacity") {
       score += Math.round(p.cap / 15);
       reasons.push("سعة تخزينية ممتازة تبلغ " + p.cap + " لتر");
@@ -1154,7 +1338,7 @@ function initApp() {
   });
 
   // Catalog filter controls
-  ["searchInput", "capFilter", "priceFilter", "sortSelect", "chkInverter", "chkBottomFreezer", "chkTopFreezer"].forEach(id => {
+  ["searchInput", "capFilter", "priceFilter", "sortSelect", "chkNoFrost", "chkInverter", "chkBottomFreezer", "chkTopFreezer"].forEach(id => {
     $(id).addEventListener("input", renderCatalog);
     $(id).addEventListener("change", renderCatalog);
   });
@@ -1164,6 +1348,7 @@ function initApp() {
     $("capFilter").value = "all";
     $("priceFilter").value = "99999";
     $("sortSelect").value = "brand_desc";
+    $("chkNoFrost").checked = false;
     $("chkInverter").checked = false;
     $("chkBottomFreezer").checked = false;
     $("chkTopFreezer").checked = false;
@@ -1286,7 +1471,7 @@ function initApp() {
     if (!g) return 0;
     return new Set(Array.from(g.querySelectorAll(".select-for-comp")).map(x => x.getAttribute("data-idx"))).size;
   }
-  const FILTERS = { capFilter: "capacity", priceFilter: "max_price", sortSelect: "sort", chkInverter: "inverter", chkBottomFreezer: "bottom_freezer", chkTopFreezer: "top_freezer" };
+  const FILTERS = { capFilter: "capacity", priceFilter: "max_price", sortSelect: "sort", chkNoFrost: "no_frost", chkInverter: "inverter", chkBottomFreezer: "bottom_freezer", chkTopFreezer: "top_freezer" };
   Object.keys(FILTERS).forEach(id => {
     const el = byId(id);
     if (!el) return;
